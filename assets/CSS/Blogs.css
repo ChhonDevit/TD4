@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio_container {
+    position: relative;
+    height: 100%;
+}
+
+.sidebar {
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    width: 22%;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 400px;
+}
+
+.sidebar img {
+    margin-top: 5%;
+    width: 80px;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+
+.sidebar h2 {
+    color: #000;
+    margin-top: 1%;
+    padding: 10px;
+}
+
+.sidebar h4 {
+    color: #808080;
+    padding: 10px;
+    padding-bottom: 10%;
+}
+
+#nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav li {
+    padding: 15px;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    border-bottom: 1px solidr rgb(225, 225, 225, 0.1);
+    margin: -1px;
+}
+
+#nav li:hover {
+    background-color: #8a8a8a96;
+    border-right: 5px solid yellow;
+}
+
+.icons {
+    margin-top: 3%;
+    margin-bottom: 20%;
+    font-size: 15px;
+}
+
+.icons i {
+    background-color: rgba(73, 73, 73, 0.3);
+    color: gray;
+    padding: 5px;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+.icons i:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.sadow {
+    background-color: rgb(85, 82, 82, 0.1);
+    position: absolute;
+    margin-left: 22%;
+    height: 220vh;
+    width: 2%;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    margin-left: 23%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.blogs {
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 5px;
+    padding-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.blogs h3 {
+    width: 80px;
+    padding-left: 140px;
+    padding-top: 10px;
+    height: 50px;
+    background-color: rgb(223, 223, 7);
+    font-size: 23px;
+    color: white;
+    border-top-left-radius: 15px;
+}
+
+.blogs h3::before {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    content: '';
+    width: 15px;
+    height: 30px;
+    background-color: rgb(223, 223, 7);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.blogs h3::after {
+    content: '';
+    position: absolute;
+    top: 53px;
+    width: 15px;
+    height: 30px;
+    left: 0;
+    background-color: rgb(223, 223, 7);
+    z-index: 1;
+}
+.blogs .blogs_text {
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    color: #000;
+    font-size: 15px;
+}
+
+.flexbox-container {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 170vh;
+}
+
+.flexbox-container .flex-item {
+    flex-grow: 1;
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
+.flexbox-container .flex-item .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+.flexbox-container .flex-item .card .card_container {
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 16px;
+}
+
+.card_date {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 196, 0);
+    position: relative;
+    width: 10%;
+    height: 16%;
+    padding: 1%;
+    margin: -12% 0 2% 75%;
+    font-size: 1em;
+    font-weight: 600;
+}
+.flexbox-container .flex-item8 {
+    flex-grow: 1;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+.flexbox-container .flex-item8 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+
+/* .flexbox-container .flex-item8 .card img {
+    width: 100%;
+} */
+
+.flexbox-container .flex-item8 .card .card_container {
+    padding-top: 2px;
+    padding-bottom: 16px;
+}
+
+.flexbox-container .flex-item8 .card .card_container img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        height: 100%;
+    }
+    .sidebar img {
+        margin-top: 10%;
+    }
+    .sidebar h2 {
+        margin-top: 2%;
+        font-size: 25px;
+    }
+    .sidebar h4 {
+        margin-top: 2%;
+        font-size: 15px;
+    }
+    #nav {
+        margin-top: 1%;
+        font-size: 20px;
+    }
+    #nav a {
+        font-size: 18px;
+    }
+    #nav li {
+        padding: 5px 0 5px 0;
+    }
+    .icons {
+        margin-top: 10%;
+        font-size: 15px;
+    }
+    .sadow {
+        height: 445vh;
+    }
+    .flexbox-container {
+        margin-top: 20%;
+    }
+    .flexbox-container .flex-item {
+        width: 100%;
+        margin-top: 8%;
+    }
+    .flexbox-container .flex-item8 {
+        width: 100%;
+        margin-top: 8%;
+    }
+    /* .card_date {
+        margin: -18% 0 -2% 75%;
+    } */
+}
